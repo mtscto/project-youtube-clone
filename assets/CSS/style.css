@@ -1,0 +1,514 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 3rem 0 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    z-index: 100;
+    padding: 0px 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100vh;
+    background: var(--box-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-link {
+    font-size: 0.94rem;
+    padding: 4px 8px;
+    border-radius: 0.2rem;
+    color: var(--bg-color);
+}
+
+.nav-link:hover {
+    color: var(--main-color);
+    background: var(--contains-color);
+    transition: 0.3s all linear;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.3s;
+    padding: 10px;
+
+}
+
+.menu-icon:hover {
+    background: #e5e5e5;
+    border-radius: 50%;
+}
+
+.menu-icon div {
+    display: block;
+    background-color: #000;
+    height: 1px;
+    width: 18px;
+    transition: 0.3s;
+}
+
+
+
+.move .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.move .line2 {
+    opacity: 0;
+}
+
+.move .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.you-inc {
+    width: 90px;
+    height: 20px;
+    display: flex;
+    padding: 0;
+}
+
+.you-inc h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222222;
+    padding: 0;
+    letter-spacing: -1.5px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    left: -17px;
+    top: -2px;
+}
+
+.you-inc img {
+    width: 70px;
+    height: 55px;
+    position: relative;
+    top: -17px;
+}
+
+/* Search Content*/
+.search-content {
+    display: flex;
+    align-items: center;
+}
+
+.search-in {
+    background: #f1f1f1;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search-in:hover {
+    transition: 0.3s all linear;
+    background-color: #d9d9d9;
+}
+
+.search-in .bx {
+    font-size: 1.2rem;
+}
+
+/* Search Box */
+.search-box {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    column-gap: 0.7rem;
+    padding: 8px 15px;
+    background: none;
+    border-radius: 4rem;
+    margin-right: 1rem;
+    border: 1px solid #dbdbdb;
+}
+
+.inner-search {
+    display: flex;
+    width: 100%;
+}
+
+.search-box .bx {
+    font-size: 1.3rem;
+    color: #151515;
+    cursor: pointer;
+}
+
+.search-box .bx:hover {
+    color: #000;
+    transition: 0.3s all linear;
+    transform: scale(1.1);
+}
+
+#search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 0.938rem;
+}
+
+/* Config Box */
+.config-box {
+    display: flex;
+    align-items: center;
+}
+
+#config-bx {
+    font-size: 1.4rem;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+#config-bx:hover {
+    transition: 0.3s all linear;
+    background: #ebebeb;
+}
+
+.button-box {
+    display: flex;
+}
+
+.button-box .bx {
+    font-size: 1.3rem;
+    color: #065fd4;
+}
+
+.button-box button {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: none;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid #d9d9d9;
+    border-radius: 2rem;
+    color: #065fd4;
+}
+
+.button-box button:hover {
+    background-color: #def1ff;
+}
+
+/* Video Box */
+.video-box {
+    width: 952px;
+    height: 746px;
+    margin: 5rem 0.4rem 0 5.5rem;
+    padding: 0 1rem 0 1rem;
+}
+
+.video-content {
+    height: max-content;
+    width: 715px;
+}
+
+.video-content img {
+    width: 715px;
+}
+
+.description-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    width: 746px;
+}
+
+.description-content h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #181818;
+}
+
+.user-info {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #c8b06d;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-more h1{
+    color: #181818;
+    font-size: 1rem;
+}
+
+.user-more h2{
+    color: #585858;
+    font-size: 0.920rem;
+    font-weight: 400;
+}
+
+.user-member {
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 125px;
+}
+
+.user-member button {
+    width: 100%;
+    font-weight: 700;
+    font-size: 0.928rem;
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 2rem;
+    border: 1px solid #e7e7e7;
+    color: #373737;
+}
+.user-member button:hover {
+    transition: 0.3s all linear;
+    background: #e7e7e7;
+}
+.user-inscription {
+    width: 125px;
+    margin-right: 20px;
+}
+
+.user-inscription button {
+    width: 100%;
+    font-weight: 700;
+    font-size: 0.928rem;
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 2rem;
+    color: #fff;
+    background: #000;
+    border: 1px solid #585858;
+}
+.user-inscription button:hover {
+    transition: 0.3s all linear;
+    background: #212121;
+}
+
+.avaliation {
+    width: 125px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background: #f2f2f2;
+    border-radius: 2rem;
+}
+.avaliation p {
+    padding: 3px 0 0 0;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-left: none;
+    border-right: none;
+    color: #cccccc;
+    font-size: 1.5rem;
+}
+
+.like {
+    font-size: 1.5rem;
+    padding: 8px 10px 4px 10px;
+    width: 50%;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-right: none;
+    border-radius: 2rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    cursor: pointer;
+}
+
+.like:hover {
+    transition: 0.3s all linear;
+    background: #d2d2d2;
+}
+
+.dislike{
+    font-size: 1.5rem;
+    padding: 8px 10px 4px 10px;
+    width: 50%;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-left: none;
+    border-radius: 2rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+}
+
+.dislike:hover{
+    transition: 0.3s all linear;
+    background: #d2d2d2;
+}
+
+.share {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 35px;
+}
+
+.share button {
+    border: none;
+    padding: 5px;
+    border: 1px solid #f2f2f2;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #f2f2f2;
+}
+
+.share button:hover {
+    transition: 0.3s all linear;
+    background: #d2d2d2;
+}
+
+.share .bx {
+    transform: rotateY(180deg);
+    font-size: 1.7rem;
+}
+
+.dots {
+    width: 40px;
+}
+
+.dots button {
+    border: none;
+    padding: 5px;
+    border: 1px solid #f2f2f2;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #f2f2f2;
+}
+
+.dots button:hover {
+    transition: 0.3s all linear;
+    background: #d2d2d2;
+}
+
+.dots .bx {
+    font-size: 1.7rem;
+}
+
+.video-description {
+    margin-top: 1rem;
+    width: 715px;
+    padding: 10px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.video-description:hover{
+    transition: 0.3s all linear;
+    background: #e6e6e6;
+}
+
+.video-description h1 {
+    font-size: 0.928rem;
+    font-weight: 600;
+    color: #2d2d2d;
+}
+
+.video-description p {
+    margin-top: 3px;
+    font-weight: 400;
+    color: #0f0f0f;
+}
+
+.suggestion {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    right: 6.5rem;
+}
+.suggestion-box{
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.box-1 {
+    display: flex;
+    height: 90px;
+}
+
+.box-1 img {
+    width: 160px;
+    height: 90px;
+    border-radius: .5rem;
+}
+
+.box-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.box-info h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+.name {
+    margin-bottom: 4px;
+    color: #606060;
+}
+
+.box-info p {
+    color: #606060;
+}
