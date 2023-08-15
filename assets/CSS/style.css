@@ -47,26 +47,46 @@ header {
     position: absolute;
     top: 0;
     left: -100%;
-    width: 300px;
+    width: 235px;
     height: 100vh;
-    background: var(--box-color);
+    background: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 50px 20px;
+    align-items: start;
+    padding: 50px 10px;
     transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navbar li {
+    width: 100%;
+}
+
+.open-menu {
+    left: 0;
+    transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.escurecer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 82.6%;
+    height: 100vh;
+    background-color: #00000048;
+    transition: 0.5s all linear;
 }
 
 .nav-link {
     font-size: 0.94rem;
-    padding: 4px 8px;
-    border-radius: 0.2rem;
-    color: var(--bg-color);
+    padding: 20px 20px;
+    border-radius: 10px;
+    color: #000;
+    display: flex;
+    width: 100%;
 }
 
 .nav-link:hover {
-    color: var(--main-color);
-    background: var(--contains-color);
+    background: #f2f2f2;
     transition: 0.3s all linear;
 }
 
@@ -115,6 +135,10 @@ header {
     height: 20px;
     display: flex;
     padding: 0;
+}
+
+.you-inc a {
+    display: flex;
 }
 
 .you-inc h1 {
@@ -287,12 +311,12 @@ header {
     margin-right: 10px;
 }
 
-.user-more h1{
+.user-more h1 {
     color: #181818;
     font-size: 1rem;
 }
 
-.user-more h2{
+.user-more h2 {
     color: #585858;
     font-size: 0.920rem;
     font-weight: 400;
@@ -315,10 +339,12 @@ header {
     border: 1px solid #e7e7e7;
     color: #373737;
 }
+
 .user-member button:hover {
     transition: 0.3s all linear;
     background: #e7e7e7;
 }
+
 .user-inscription {
     width: 125px;
     margin-right: 20px;
@@ -336,6 +362,7 @@ header {
     background: #000;
     border: 1px solid #585858;
 }
+
 .user-inscription button:hover {
     transition: 0.3s all linear;
     background: #212121;
@@ -349,6 +376,7 @@ header {
     background: #f2f2f2;
     border-radius: 2rem;
 }
+
 .avaliation p {
     padding: 3px 0 0 0;
     background: #f2f2f2;
@@ -377,7 +405,7 @@ header {
     background: #d2d2d2;
 }
 
-.dislike{
+.dislike {
     font-size: 1.5rem;
     padding: 8px 10px 4px 10px;
     width: 50%;
@@ -390,7 +418,7 @@ header {
     cursor: pointer;
 }
 
-.dislike:hover{
+.dislike:hover {
     transition: 0.3s all linear;
     background: #d2d2d2;
 }
@@ -451,7 +479,7 @@ header {
     cursor: pointer;
 }
 
-.video-description:hover{
+.video-description:hover {
     transition: 0.3s all linear;
     background: #e6e6e6;
 }
@@ -476,7 +504,8 @@ header {
     top: 5rem;
     right: 6.5rem;
 }
-.suggestion-box{
+
+.suggestion-box {
     margin-bottom: 0.5rem;
     cursor: pointer;
 }
@@ -504,6 +533,7 @@ header {
     margin-top: 5px;
     margin-bottom: 3px;
 }
+
 .name {
     margin-bottom: 4px;
     color: #606060;
@@ -511,4 +541,60 @@ header {
 
 .box-info p {
     color: #606060;
+}
+
+/* Home CSS */
+
+.suggestion-home {
+    padding: 7.4rem 3rem 3rem 6rem;
+    display: flex;
+}
+
+.home-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.box img {
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.box-inf {
+    display: flex;
+    align-content: center;
+}
+
+.box-inf img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #c8b06d;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.description-suggestion h1 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.name-box {
+    margin-bottom: 3px;
+}
+.description-suggestion p {
+    color: #606060;   
+}
+
+.description-suggestion .bx {
+    color: #fff;
+    font-size: 0.828rem;
+    background-color: #606060;
+    border-radius: 50%;
+    margin-left: 4px;
 }
