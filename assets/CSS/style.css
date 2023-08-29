@@ -598,3 +598,31 @@ header {
     border-radius: 50%;
     margin-left: 4px;
 }
+.menu-home{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+.nav-home {
+    margin-top: 4rem;
+    margin-left: 3px;
+    display: flex;
+    flex-direction: column;
+    width: 4rem;
+}
+.nav-home .bx {
+    font-size: 1.5rem;
+}
+.nav-home a {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.628rem;
+    align-items: center;
+    align-content: center;
+}
+
+.inscrip{
+    color: #ffffff;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000; 
+}
